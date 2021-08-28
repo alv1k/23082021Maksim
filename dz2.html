@@ -1,0 +1,67 @@
+<meta charset="utf-8" />
+<script type="text/javascript" src="https://dl.dropbox.com/s/2is2rmxt9120tiw/script.js"></script>
+<div class="question1" style="height: 300px;width: 300px;background-color:blue;margin-left: 300px;">
+	<img src="https://slovnet.ru/wp-content/uploads/2018/12/11-18.jpg"style="width: 300px;">
+	<h5>Как звали робота помощника Планктона?</h5>
+		<div class="answer1" style="height: 40px;width: 300px;background-color: lightgrey;">
+			Алиса
+		</div>
+
+		<div class="answer2" style="height: 40px;width: 300px;background-color: grey;">
+			Карен
+		</div>
+
+		<div class="answer3" style="height: 40px;width: 300px;background-color: darkgrey;">
+			Берта
+		</div>
+</div>
+
+<div class="question2" style="height: 350px;width: 300px;background-color:blue;margin-left: 300px;margin-top: 100px;display: none;">
+	<img src="https://www.mosu.ru/wp-content/uploads/2020/08/0ed4363f89e451cde26e4bfe48730be61f-patrick-star.jpg"style="width: 300px;">
+	<h5>Под чем живёт Патрик?</h5>
+		<div class="answer1" style="height: 40px;width: 300px;background-color: lightgrey;">
+			Под ананасом
+		</div>
+
+		<div class="answer2" style="height: 40px;width: 300px;background-color: grey;">
+			Под раковиной
+		</div>
+
+		<div class="answer3" style="height: 40px;width: 300px;background-color: darkgrey;">
+			Под камнем
+		</div>
+</div>
+
+<div class="question3" style="height: 300px;width: 300px;background-color:blue;margin-left: 300px;margin-top: 100px;display: none;">
+	<img src="Безымянный.png"style="width: 300px;">
+	<h5>Кем работает Сквидвард?</h5>
+		<div class="answer1" style="height: 40px;width: 300px;background-color: lightgrey;">
+			Кассиром
+		</div>
+
+		<div class="answer2" style="height: 40px;width: 300px;background-color: grey;">
+			Поваром
+		</div>
+
+		<div class="answer3" style="height: 40px;width: 300px;background-color: darkgrey;">
+			Уборщиком
+		</div>
+</div>
+
+<div class="win" style="height: 40px;width: 200px;background-color: gold;margin-left: 450px;margin-top: 200px;display: none;">
+	<h1>Вы прошли!</h1>
+</div>
+
+<script>
+	find("question1 answer1").click("alert","неверно")
+    find("question1 answer2").click("show","question2","Правильно")
+    find("question1 answer3").click("alert","неверно")
+
+    find("question2 answer1").click("alert","неверно")
+    find("question2 answer2").click("alert","неверно")
+    find("question2 answer3").click("show","question3","Правильно")
+
+    find("question3 answer1").click("show","win","Правильно")
+    find("question3 answer2").click("alert","неверно")
+    find("question3 answer3").click("alert","неверно")
+</script>
